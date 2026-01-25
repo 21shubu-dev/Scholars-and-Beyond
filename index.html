@@ -128,12 +128,31 @@
     }
 
     #review-box {
-      min-height: 140px;
+      min-height: 160px;
       font-size: 1.1rem;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: opacity 0.6s ease;
+      position: relative;
+    }
+
+    #review-box::before {
+      content: "“";
+      font-size: 3rem;
+      color: var(--primary);
+      position: absolute;
+      left: 1rem;
+      top: 0.5rem;
+    }
+
+    #review-box::after {
+      content: "”";
+      font-size: 3rem;
+      color: var(--primary);
+      position: absolute;
+      right: 1rem;
+      bottom: 0.5rem;
     }
 
     .contact {
@@ -257,7 +276,7 @@
       <strong>Email:</strong> 21Shubu@gmail.com<br>
       <strong>Phone:</strong> (561) 699-0543
     </p>
-    <a href="21Shubu@gmail.com" class="btn">Contact Us</a>
+    <a href="mailto:21Shubu@gmail.com" class="btn">Contact Us</a>
   </div>
 </section>
 
@@ -267,7 +286,10 @@
 
 <script>
   const reviews = [
-    "Shubham is the best tutor you could possibly ever have. His brain thinks so uniquely and if you have a specific question about something he'll always know the answer. He will also make up examples from his head in order to help you understand the topic efficiently. Shubham was meant to be a tutor! I promise you he'll be the best you've ever had"
+    "Shubham is the best tutor you could possibly ever have. His brain thinks so uniquely and he always finds a way to explain things clearly.",
+    "My child’s math confidence improved drastically after just a few sessions. Concepts that once seemed impossible now feel easy.",
+    "Excellent chess coach. Game analysis sessions helped me understand my mistakes and improve much faster than before.",
+    "Professional, patient, and extremely knowledgeable in both math and chess. Highly recommended!"
   ];
 
   let index = 0;
@@ -275,11 +297,12 @@
 
   function rotateReviews() {
     reviewBox.style.opacity = 0;
+
     setTimeout(() => {
       reviewBox.textContent = reviews[index];
       reviewBox.style.opacity = 1;
       index = (index + 1) % reviews.length;
-    }, 500);
+    }, 600);
   }
 
   rotateReviews();
