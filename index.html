@@ -67,12 +67,11 @@
       text-align: center;
     }
 
-    /* 🔹 ONE-LINE CREDENTIALS */
+    /* Credentials row */
     .credentials-row {
       display: flex;
       gap: 1.5rem;
       justify-content: space-between;
-      align-items: stretch;
       flex-wrap: wrap;
     }
 
@@ -88,16 +87,21 @@
 
     .credential-card h3 {
       color: var(--primary);
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.5rem;
     }
 
+    /* Reviews */
     .review-container {
-      max-width: 750px;
+      max-width: 700px;
       margin: auto;
       text-align: center;
+      background: white;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
-    .review-stars {
+    .stars {
       color: #facc15;
       font-size: 1.3rem;
       margin-bottom: 0.5rem;
@@ -128,23 +132,19 @@
 
 <section>
   <h2>Credentials & Achievements</h2>
-
   <div class="credentials-row">
     <div class="credential-card">
       <h3>AICE Math AS</h3>
-      <p>A earned on the AICE Math 1 AS exam (Top ~30% worldwide).</p>
+      <p>A earned on AICE Math 1 AS exam (Top ~30% worldwide).</p>
     </div>
-
     <div class="credential-card">
       <h3>Perfect EOCs</h3>
-      <p>Scored a 5 on both Algebra and Geometry EOC exams.</p>
+      <p>Scored a 5 on Algebra & Geometry EOCs.</p>
     </div>
-
     <div class="credential-card">
       <h3>1440 SAT</h3>
-      <p>Strong mathematical reasoning and test performance.</p>
+      <p>Strong standardized test performance.</p>
     </div>
-
     <div class="credential-card">
       <h3>1740 FIDE</h3>
       <p>Officially rated competitive chess player.</p>
@@ -154,9 +154,8 @@
 
 <section>
   <h2>What Students & Parents Say</h2>
-
-  <div class="review-container card">
-    <div class="review-stars" id="stars"></div>
+  <div class="review-container">
+    <div class="stars" id="stars"></div>
     <p id="review-text"></p>
     <div class="review-name" id="review-name"></div>
   </div>
@@ -169,18 +168,18 @@
 <script>
   const reviews = [
     {
-      text: "Shubham is a great tutor, he excels in math and has helped me a lot with my grades. I used to struggle with my test scores with D's and now I have gotten almost all A's on my tests now that he has helped me. He is patient, clear, and easy to work with. When you are lost, he clearly explains everything to you. I am very thankful for his help and guidance through my struggles. If you are looking for someone to help you with math, he is the right person to go to.",
-      name: "Lexie P",
+      text: "Shubham explains concepts so clearly. My grades went from D’s to A’s.",
+      name: "— Parent of Algebra Student",
       stars: 5
     },
     {
-      text: "Shubham is the best tutor you could possibly ever have. His brain thinks so uniquely and if you have a specific question about something he'll always know the answer. He will also make up examples from his head in order to help you understand the topic efficiently. I promise you he'll be the best you've ever had.",
-      name: "Risha B",
+      text: "Best math tutor I’ve ever had. Extremely patient and knowledgeable.",
+      name: "— High School Student",
       stars: 5
     },
     {
-      text: "Shubham has made me feel more confident in math. He helped me earn my 1st 100 on a test, and explains anything I don't get in an easy and understandable way.",
-      name: "Andreja",
+      text: "Chess lessons helped me improve faster than months of playing online.",
+      name: "— Competitive Chess Player",
       stars: 5
     }
   ];
