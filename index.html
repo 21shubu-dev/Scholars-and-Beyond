@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scholars & Beyond | Math & Chess Tutoring</title>
-
-  <meta name="description" content="Scholars & Beyond offers expert Math and Chess tutoring. AICE Math A, perfect EOC scores, 1440 SAT, and a 1740 FIDE rating." />
 
   <style>
     :root {
@@ -33,34 +31,17 @@
       background: linear-gradient(135deg, var(--primary), #1e40af);
       color: white;
       padding: 4rem 1.5rem;
-    }
-
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
       text-align: center;
-    }
-
-    .header-inner img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid rgba(255,255,255,0.8);
     }
 
     header h1 {
       font-size: 2.8rem;
-      margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.2rem;
       max-width: 800px;
-      margin: 0.5rem auto 1.5rem;
+      margin: 1rem auto;
+      font-size: 1.2rem;
     }
 
     .btn {
@@ -71,17 +52,12 @@
       border-radius: 999px;
       text-decoration: none;
       font-weight: 600;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      margin-top: 1rem;
     }
 
     section {
       padding: 4rem 1.5rem;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
     }
 
@@ -91,83 +67,51 @@
       text-align: center;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* 🔹 ONE-LINE CREDENTIALS */
+    .credentials-row {
+      display: flex;
       gap: 1.5rem;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
     }
 
-    .card {
+    .credential-card {
+      flex: 1;
+      min-width: 220px;
       background: var(--card);
       border-radius: 1rem;
-      padding: 2rem;
+      padding: 1.8rem;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-bottom: 0.5rem;
-      color: var(--primary);
-    }
-
-    .highlight {
-      background: #eef2ff;
-      border-left: 6px solid var(--primary);
-    }
-
-    .about {
-      max-width: 850px;
-      margin: auto;
       text-align: center;
-      font-size: 1.1rem;
     }
 
-    /* Reviews */
+    .credential-card h3 {
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+    }
+
     .review-container {
-      max-width: 700px;
+      max-width: 750px;
       margin: auto;
       text-align: center;
     }
 
-    #review-box {
-      min-height: 220px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 0.75rem;
-      transition: opacity 0.6s ease;
-    }
-
-    .stars {
+    .review-stars {
       color: #facc15;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
     }
 
-    .review-text {
-      font-size: 1.1rem;
-      font-style: italic;
-    }
-
-    .reviewer {
-      font-weight: 600;
+    .review-name {
+      margin-top: 1rem;
+      font-weight: 700;
       color: var(--primary);
-    }
-
-    .contact {
-      background: var(--secondary);
-      color: white;
-      border-radius: 1.5rem;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    .contact p {
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
       font-size: 0.9rem;
       color: #475569;
     }
@@ -177,157 +121,80 @@
 <body>
 
 <header>
-  <div class="header-inner">
-    <img src="Screenshot_20260124-210725_WhatsApp.jpg" alt="Tutor photo">
-    <div>
-      <h1>Scholars & Beyond</h1>
-      <p>
-        Math and Chess Tutoring that builds confidence, critical thinking,
-        and real results — from the classroom to competition.
-      </p>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
-  </div>
+  <h1>Scholars & Beyond</h1>
+  <p>Expert Math & Chess tutoring that builds confidence, clarity, and results.</p>
+  <a href="contact.html" class="btn">Contact Us</a>
 </header>
 
 <section>
   <h2>Credentials & Achievements</h2>
-  <div class="grid">
-    <div class="card highlight">
-      <h3>A in AICE Math 1 (AS Level)</h3>
-      <p>Earned an <strong>A</strong> on the AICE Math 1 AS exam — achieved by only about <strong>30% of students worldwide</strong>.</p>
+
+  <div class="credentials-row">
+    <div class="credential-card">
+      <h3>AICE Math AS</h3>
+      <p>A earned on the AICE Math 1 AS exam (Top ~30% worldwide).</p>
     </div>
-    <div class="card highlight">
-      <h3>Perfect EOC Scores</h3>
-      <p>Scored a <strong>5</strong> on both <strong>Algebra</strong> and <strong>Geometry</strong> End-of-Course exams.</p>
+
+    <div class="credential-card">
+      <h3>Perfect EOCs</h3>
+      <p>Scored a 5 on both Algebra and Geometry EOC exams.</p>
     </div>
-    <div class="card highlight">
-      <h3>1440 SAT Score</h3>
-      <p>Strong mathematical reasoning and proven standardized test performance.</p>
+
+    <div class="credential-card">
+      <h3>1440 SAT</h3>
+      <p>Strong mathematical reasoning and test performance.</p>
     </div>
-    <div class="card highlight">
-      <h3>1740 FIDE Rating</h3>
-      <p>Official FIDE-rated chess player with competitive tournament experience.</p>
+
+    <div class="credential-card">
+      <h3>1740 FIDE</h3>
+      <p>Officially rated competitive chess player.</p>
     </div>
   </div>
 </section>
 
 <section>
   <h2>What Students & Parents Say</h2>
-  <div class="review-container">
-    <div id="review-box" class="card">
-      <div class="stars" id="stars"></div>
-      <div class="review-text" id="review-text"></div>
-      <div class="reviewer" id="reviewer"></div>
-    </div>
-  </div>
-</section>
 
-<section>
-  <h2>Math Tutoring</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Algebra & Geometry</h3>
-      <p>Concept mastery, problem-solving, and exam preparation.</p>
-    </div>
-    <div class="card">
-      <h3>Calculus</h3>
-      <p>Limits, derivatives, integrals, and real-world applications.</p>
-    </div>
-    <div class="card">
-      <h3>SAT Math Prep</h3>
-      <p>Targeted strategies to maximize score and confidence.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Chess Tutoring</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Beginner to Advanced</h3>
-      <p>Solid foundations, tactical vision, and strategic understanding.</p>
-    </div>
-    <div class="card">
-      <h3>Game Analysis</h3>
-      <p>Learn from real games to identify mistakes and improve faster.</p>
-    </div>
-    <div class="card">
-      <h3>Competitive Training</h3>
-      <p>Preparation for tournaments, online play, and rating growth.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>About Scholars & Beyond</h2>
-  <p class="about">
-    Scholars & Beyond is built on the belief that math and chess sharpen the same
-    core skills: logic, discipline, and confident decision-making.
-    Every lesson is personalized to help students succeed academically
-    and competitively.
-  </p>
-</section>
-
-<section id="contact">
-  <div class="contact">
-    <h2>Take the Next Step</h2>
-    <p>Contact Scholars & Beyond to schedule tutoring or ask questions.</p>
-    <p>
-      <strong>Email:</strong> 21Shubu@gmail.com<br>
-      <strong>Phone:</strong> (561) 699-0543
-    </p>
- <a href="contact.html" class="btn">Contact Us</a>
+  <div class="review-container card">
+    <div class="review-stars" id="stars"></div>
+    <p id="review-text"></p>
+    <div class="review-name" id="review-name"></div>
   </div>
 </section>
 
 <footer>
-  © 2026 Scholars & Beyond — Math & Chess Tutoring. All rights reserved.
+  © 2026 Scholars & Beyond — Math & Chess Tutoring
 </footer>
 
 <script>
   const reviews = [
     {
+      text: "Shubham is a great tutor, he excels in math and has helped me a lot with my grades. I used to struggle with my test scores with D's and now I have gotten almost all A's on my tests now that he has helped me. He is patient, clear, and easy to work with. When you are lost, he clearly explains everything to you. I am very thankful for his help and guidance through my struggles. If you are looking for someone to help you with math, he is the right person to go to.",
       name: "Lexie P",
-      rating: 5,
-      text: "Shubham is a great tutor, he excels in math and has helped me a lot with my grades. I used to struggle with my test scores with D's and now I have gotten almost all A's on my tests now that he has helped me. He is patient, clear, and easy to work with. When you are lost, he clearly explains everything to you. I am very thankful for his help and guidance through my struggles. If you are looking for someone to help you with math, he is the right person to go to."
+      stars: 5
     },
     {
+      text: "Shubham is the best tutor you could possibly ever have. His brain thinks so uniquely and if you have a specific question about something he'll always know the answer. He will also make up examples from his head in order to help you understand the topic efficiently. I promise you he'll be the best you've ever had.",
       name: "Risha B",
-      rating: 5,
-      text: "Shubham is the best tutor you could possibly ever have. His brain thinks so uniquely and if you have a specific question about something he'll always know the answer. He will also make up examples from his head in order to help you understand the topic efficiently. I promise you he'll be the best you've ever had."
+      stars: 5
     },
     {
+      text: "Shubham has made me feel more confident in math. He helped me earn my 1st 100 on a test, and explains anything I don't get in an easy and understandable way.",
       name: "Andreja",
-      rating: 5,
-      text: "Shubham has made me feel more confident in math. He helped me earn my 1st 100 on a test, and explains anything I don't get in an easy and understandable way."
-    },
-    {
-      name: "Parent",
-      rating: 5,
-      text: "Professional, patient, and extremely knowledgeable in both math and chess. Highly recommended."
+      stars: 5
     }
   ];
 
-  let index = 0;
-  const reviewBox = document.getElementById("review-box");
-  const reviewText = document.getElementById("review-text");
-  const reviewer = document.getElementById("reviewer");
+  let i = 0;
+  const text = document.getElementById("review-text");
+  const name = document.getElementById("review-name");
   const stars = document.getElementById("stars");
 
-  function renderStars(rating) {
-    return "★".repeat(rating) + "☆".repeat(5 - rating);
-  }
-
   function rotateReviews() {
-    reviewBox.style.opacity = 0;
-    setTimeout(() => {
-      reviewText.textContent = reviews[index].text;
-      reviewer.textContent = reviews[index].name;
-      stars.textContent = renderStars(reviews[index].rating);
-      reviewBox.style.opacity = 1;
-      index = (index + 1) % reviews.length;
-    }, 600);
+    text.textContent = reviews[i].text;
+    name.textContent = reviews[i].name;
+    stars.textContent = "★".repeat(reviews[i].stars);
+    i = (i + 1) % reviews.length;
   }
 
   rotateReviews();
