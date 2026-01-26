@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Scholars & Beyond</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f8fafc;
+      padding: 2rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.4rem;
+      border-radius: 0.6rem;
+      border: 1px solid #cbd5f5;
+    }
+
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 1rem;
+      background: #22c55e;
+      border: none;
+      border-radius: 999px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+ 
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <h1>Request Tutoring</h1>
+
+  <label>Full Name</label>
+  <input type="text" name="name" required>
+
+  <label>Email</label>
+  <input type="email" name="email" required>
+
+  <label>Phone Number</label>
+  <input type="tel" name="phone" required>
+
+  <label>Student Age</label>
+  <input type="number" name="age" min="5" max="100" required>
+
+  <label>Subject</label>
+  <select name="subject" required>
+    <option value="">Select</option>
+    <option>Algebra</option>
+    <option>Geometry</option>
+    <option>Trigonometry</option>
+    <option>Calculus</option>
+    <option>Chess</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
